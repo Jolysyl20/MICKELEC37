@@ -1,0 +1,91 @@
+.coverMickelec{
+ background-image: url("../img/techno\ backgroundjpg.jpg");
+ background-position: center center;
+ background-repeat:no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+  
+
+}
+
+
+#wrapper {
+    width: 100%;
+    height: 232px;
+    border: 2px solid black;
+    position: relative;
+    background-image: url("../img/techno\ backgroundjpg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    z-index: 2;
+  }
+  .stripe {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-image: url("../img/volets.jpg");
+    background-position: top;
+    z-index: 1;
+    transition: height 800ms ease-in-out;
+  }
+  .stripe:first-child {
+    border-bottom: 1px solid transparent;
+    top: 0;
+  }
+  .stripe + .stripe {
+    border-top: 1px solid transparent;
+    bottom: 0;
+  }
+
+  #wrapper:hover .stripe {
+    
+    height: 0;
+  }
+  #money {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    display: block;
+    margin: auto;
+    z-index: 0;
+    text-align: center;
+    height: 1.2em;
+    line-height: 1.2em;
+  }
+        *{
+          margin: 0;
+          padding: 0;
+      }
+      .container{
+          margin: 100px auto;
+          border:  2px solid #568bc7;
+          width: 800px;
+          height: 300px;
+          overflow: hidden;
+      }
+      .container ul{
+          display: flex;
+      }
+      .container li{
+          width: 160px;
+          height: 300px;
+          list-style: none;
+          border-left: 1px solid #194b8d;
+          box-shadow: 0 0 25px #000;
+          transition: all 0.5s;
+      }
+      .container li img{
+          display: block;
+          width: 800px;
+          height: 300px;
+      }
+      .container ul:hover li{
+          width: 40px;
+      }
+      .container ul li:hover{
+          width: 600px;
+      }
