@@ -1,13 +1,25 @@
 .coverMickelec{
  background-image: url("../img/Backgroundbody.jpg");
- background-position: center center;
+ background-position: center ;
  background-repeat:no-repeat;
  background-size: cover;
  background-attachment: fixed;
   
 
 }
+.logo{
+  
+  text-shadow: rgb(255, 253, 253) 1px 0 10px;
+  margin-bottom: 20%;
+}
 
+.bloc{
+  filter: drop-shadow(1px 1px 12px #7b767675);
+  background-color: #7b767675;
+  padding: 5%; 
+  margin-top: 5%;
+  border-radius: 12px;
+}
 
 #wrapper {
     width: 100%;
